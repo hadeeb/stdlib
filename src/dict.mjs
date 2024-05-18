@@ -5,8 +5,8 @@
 
 import { isEqual } from "./gleam.mjs";
 
-const referenceMap = new WeakMap();
-const tempDataView = new DataView(new ArrayBuffer(8));
+const referenceMap = /*@__PURE__*/new WeakMap();
+const tempDataView = /*@__PURE__*/new DataView(/*@__PURE__*/new ArrayBuffer(8));
 let referenceUID = 0;
 /**
  * hash the object by reference using a weak map and incrementing uid
